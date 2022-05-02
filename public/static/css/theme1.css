@@ -1,0 +1,438 @@
+.aui-flexView {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #feda9e;
+  color: #666;
+}
+
+.aui-navBar {
+  height: 44px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  background: #fefefe;
+}
+
+.aui-navBar-item:first-child {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-right: -25%;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.aui-navBar-item {
+  height: 44px;
+  min-width: 25%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  padding: 0 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #808080;
+  position: relative;
+}
+
+.icon-return {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACh0lEQVRoQ+3ZMW8TMRQH8PcOsTBQISExVCIRCwgWFvZ+hZYBpIrEcTYkBsTGlI2VDamL3YEBpWJoR1BJaOlXYEzyDYp0bMRGRjnJoDuWs/1e3EbKeHf55b33vzsb4YJ98IJ54RKce8XZV1gIcQ8AviDiD2vtC631pzZFYQ2WUt611p4CwM0VcqqU2soSXIN1ztdKqTfZgRuw75RSz9tg3bHsWjomlh04NpYVOAWWDbjf7z8oimLipbH7bUopJdvO7L/Hk8+wwyLiCSLe8H6cww4BwGYFTo0lbWkKLBmYCksCrsNaa99rrZ/FmFnS0GrCdrvd3mg0MqEDqu58yVKaAzZZSwshHgLAsX/rcW2csrJVtaNXeIWdIuL16qJU2OgVrsMCwEGn03mSamaThVYTtizLp+PxeJkioJKFFldslJbmjA0O5o4NCm7AHpZluUM5s1FCSwjxCAA++7ceADiczWaPJ5PJL6qAihJaUspdY8w+Il7xLsASG6SlhRA/EfGa91BxNJ/Pd7hVNtiT1mAwOAeADXdCa637Hi0Wi3zBUsptY8wHRLzqwIh/nlbzbWmna0roLEOrmo11QQd9W1oHdFDwOrR3cLCH/uuFn0uQRQE7dMPKJHl6RwNzRUcF/w9N9VIRHVyhazbLDihWP5KAHbphOzQ5OhmYCzopmAM6OZgaTQL20FMAuOUtHESfaTLwCn3HWnuWEk0KpkCTg1OjWYArtDHmKyJu+jMdeh+KDdghh8NhZ7lcfvPRoXcaWYFToNmBY6NZgj20m+nb3pr3W631yzY7GWzBDtXr9TaLojjz0N+VUvezBXvoPQBw0Fda649Zg9vg6o5l3dKhse58l+AY/yqnc/4GvNDoTFOq8FwAAAAASUVORK5CYII=);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: none;
+  float: left;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.aui-center {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 44px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.aui-center-title {
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  font-size: 0.95rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.aui-navBar-item:last-child {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.aui-scrollView {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.aui-invitation-head {
+  width: 100%;
+  position: relative;
+}
+
+.aui-invitation-head .aui-invitation-ad {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+}
+
+.aui-flex-color {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 50px;
+  padding: 3px 1px;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 78%;
+}
+
+.aui-flex-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.box {
+  height: 25px;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.t_news {
+  height: 25px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.news_li, .swap {
+  line-height: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.news_li li {
+  color: #676767;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 25px;
+  line-height: 25px;
+}
+
+.news_li a, .swap a {
+  color: #fff;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: 0.85rem;
+}
+
+.news_li a img {
+  width: 25px;
+  height: 25px;
+  border: none;
+  display: block;
+  border-radius: 100%;
+  float: left;
+  margin-right: 0.3rem;
+}
+
+.swap {
+  top: 25px;
+}
+
+.aui-invitation-content {
+  background: #f3b755;
+  height: auto;
+  margin: 15px 15px 55px 15px;
+  padding: 15px;
+}
+
+.aui-invitation-item {
+  background: #fff;
+  border-radius: 0.5rem;
+  height: auto;
+  padding: 1rem 0.8rem;
+  margin-bottom: 15px;
+}
+
+.aui-invitation-title h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e3a341;
+  position: relative;
+  font-family: "Apple SD Gothic Neo";
+}
+
+.aui-coupon-body {
+  background-image: url(http://v.bootstrapmb.com/2019/4/h6jkf3865/images/coupon.png);
+  background-size: 100%;
+  margin: 1rem auto 0;
+  width: 190px;
+  padding: 18px 0 35px 0;
+  position: relative;
+  text-align: right;
+}
+
+.aui-coupon-body {
+  background-repeat: no-repeat;
+}
+
+.aui-coupon-body h2 {
+  padding-right: 28px;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-top: 2px;
+}
+
+
+.aui-coupon-body h2 em {
+  font-style: normal;
+  font-size: 2.1rem;
+}
+
+.aui-coupon-text p {
+  color: #a0a0a0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.aui-coupon-text span {
+  color: #e2aa49;
+  text-align: center;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.aui-footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 49;
+}
+
+.aui-footer {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+.aui-tabBar-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #979797;
+  background: -webkit-linear-gradient(left top, #fc6e67 , #e43129);
+  background: -o-linear-gradient(bottom right, #fc6e67 , #e43129);
+  background: -moz-linear-gradient(bottom right, #fc6e67 , #e43129);
+  background: linear-gradient(to bottom right, #fc6e67 , #e43129);
+  background-color: #fc6e67;
+  padding: 0.7rem 0;
+}
+
+
+.aui-tabBar-item-text {
+  display: inline-block;
+  font-size: 1rem;
+  color: #fade8a;
+  padding-top: 2px;
+}
+
+
+.aui-invitation-title h2:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 0.7rem;
+  right: 18%;
+  height: 3px;
+  border-radius: 4px;
+  width: 15%;
+  background: -webkit-linear-gradient(left, #ecbf6c , #fdfcf8);
+  background: -o-linear-gradient(right, #ecbf6c , #fdfcf8);
+  background: -moz-linear-gradient(right, #ecbf6c , #fdfcf8);
+  background: linear-gradient(to right, #ecbf6c , #fdfcf8);
+}
+
+.aui-invitation-title h2:after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 0.7rem;
+  left: 18%;
+  height: 3px;
+  border-radius: 4px;
+  width: 15%;
+  background: -webkit-linear-gradient(left, #fdfcf8 , #ecbf6c);
+  background: -o-linear-gradient(right, #fdfcf8 , #ecbf6c);
+  background: -moz-linear-gradient(right, #fdfcf8 , #ecbf6c);
+  background: linear-gradient(to right, #fdfcf8 , #ecbf6c);
+}
+
+.aui-coin-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.aui-coin-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+table tr {
+  background-color: #f8f8f8;
+}
+
+.aui-invitation-table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.aui-invitation-item table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-radius: 0.9rem;
+}
+
+table tr:nth-child(2n+1) {
+  background-color: #ffeee7;
+}
+
+.aui-invitation-item table tr th {
+  background: #ff7d4c;
+  color: #fff;
+  font-weight: normal;
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
+.aui-invitation-item table tr td {
+  color: #a7a5a6;
+  font-weight: normal;
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
